@@ -39,7 +39,7 @@ Lecții, cerințe și rezolvări pe zile, plus cheatsheet-uri pentru test. Totul
 | Liste de obiecte: afișare, populare, sortare, filtrare, adăugare, ștergere, update | Ziua 3 (afișare, adăugare) · Ziua 4 (restul) · [§8–11](cheatsheet/02-cod-sabloane.md) |
 | Binding sau findViewById() | **findViewById** peste tot (decizie: fără Gradle sync la test) |
 | Logcat și debugger | [cheatsheet/03-capcane-si-erori.md](cheatsheet/03-capcane-si-erori.md) · [shortcuts](cheatsheet/01-android-studio-shortcuts.md) |
-| Intent implicit, explicit, `launcher.launch()` vs `startActivity()` | Ziua 3 + Drill 1 · [§6–7, §12](cheatsheet/02-cod-sabloane.md) |
+| Intent implicit, explicit, `launcher.launch()` vs `startActivity()` | Ziua 3 + Drill 1 · [§6–7, §12](cheatsheet/02-cod-sabloane.md) · [foaia de transmitere date](cheatsheet/04-transmitere-date-intre-activitati.md) |
 | AlertDialog, click / long click | Ziua 4 · [§9](cheatsheet/02-cod-sabloane.md) |
 | ListView, RecyclerView | Ziua 3, Ziua 5 · [§8, §14](cheatsheet/02-cod-sabloane.md) |
 | Adapter generic și personalizat (doar view) | Ziua 3 (generic), Ziua 5 (personalizat) · [§13–14](cheatsheet/02-cod-sabloane.md) |
@@ -64,7 +64,7 @@ Fragmentele (Seminarul 3) **nu intră** la test.
 ## Structură
 
 ```
-cheatsheet/            shortcuts, șabloane de cod, capcane și erori
+cheatsheet/            shortcuts, șabloane de cod, capcane și erori, transmitere date
 ziua-XX-.../           lectie.md · cerinta.md · rezolvare/
 drill-XX-.../          exerciții scurte de repetat pe timp
 taskuri-seminar/       taskurile date de profesor la final de seminar
