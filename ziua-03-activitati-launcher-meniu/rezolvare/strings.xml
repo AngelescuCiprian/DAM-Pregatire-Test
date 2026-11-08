@@ -1,0 +1,26 @@
+<!-- res/values/strings.xml -->
+<resources>
+    <string name="app_name">CartiApp</string>
+    <string name="fab_desc">Adaugă carte</string>
+
+    <string name="hint_titlu">Titlu</string>
+    <string name="label_gen">Gen</string>
+    <string name="hint_an">Anul apariției (1990–2026)</string>
+    <string name="btn_salveaza">Salvează</string>
+    <string name="err_empty">Completează titlul și anul!</string>
+    <string name="err_an">Anul trebuie să fie între 1990 și 2026!</string>
+
+    <string name="nav_count">Număr cărți</string>
+    <string name="nav_about">Despre</string>
+    <string name="count_format">Sunt %1$d cărți în listă</string>
+
+    <string name="about_text">CartiApp v1.0</string>
+    <string name="btn_inapoi">Înapoi</string>
+
+    <string-array name="genuri">
+        <item>Roman</item>
+        <item>SF</item>
+        <item>Poezie</item>
+        <item>Istorie</item>
+    </string-array>
+</resources>

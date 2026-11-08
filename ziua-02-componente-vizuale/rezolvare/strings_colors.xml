@@ -1,0 +1,27 @@
+<!-- ===== res/values/strings.xml ===== -->
+<resources>
+    <string name="app_name">Bilet Film</string>
+    <string name="hint_name">Nume</string>
+    <string name="hint_age">Vârstă</string>
+    <string name="cb_student">Student (-50%)</string>
+    <string name="cb_details">Arată prețurile</string>
+    <string name="btn_calc">Calculează</string>
+    <string name="btn_reset">Resetează</string>
+    <string name="prices">Standard 25 lei · VIP 40 lei · 3D 35 lei</string>
+    <string name="err_empty">Completează numele și vârsta!</string>
+    <string name="err_age">Vârsta trebuie să fie între 12 și 100!</string>
+    <!-- %1$s = nume, %2$s = tip bilet, %3$.2f = preț cu 2 zecimale -->
+    <string name="result_format">%1$s, biletul tău %2$s costă %3$.2f lei</string>
+
+    <string-array name="ticket_types">
+        <item>Standard</item>
+        <item>VIP</item>
+        <item>3D</item>
+    </string-array>
+</resources>
+
+<!-- ===== res/values/colors.xml (adaugi la cele existente) ===== -->
+<resources>
+    <color name="verde">#2E7D32</color>
+    <color name="albastru">#1565C0</color>
+</resources>

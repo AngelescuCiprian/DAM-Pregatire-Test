@@ -1,0 +1,7 @@
+<!-- res/values/strings.xml -->
+<resources>
+    <string name="app_name">LifecycleApp</string>
+    <string name="hint_text">Scrie ceva</string>
+    <string name="btn_add">Adaugă</string>
+    <string name="counter_format">Apăsat de %1$d ori</string>
+</resources>
