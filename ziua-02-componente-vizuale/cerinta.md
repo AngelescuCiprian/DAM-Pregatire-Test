@@ -28,10 +28,10 @@
    - culoare **verde** dacă s-a aplicat reducerea, **albastru** altfel;
    - `Log.d` cu prețul.
 3. **Resetează:** golește câmpurile, Spinner-ul revine pe 0, debifezi ambele CheckBox-uri, golești rezultatul (și variabila!), focus pe `etName`.
-4. **Rotire:** rezultatul și culoarea lui se păstrează.
+4. *(Bonus, nu intră la test)* **Rotire:** rezultatul și culoarea lui se păstrează.
 
 ## Verificare
 
 - 3D + student = **17.50**, nu 17.
 - Calculează → Resetează → rotește: rezultatul **nu** reapare.
-- Calculează cu student → rotește: rezultatul rămâne **verde**.
+- *(bonus)* Calculează cu student → rotește: rezultatul rămâne **verde**.

@@ -6,6 +6,7 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.ListView;
 import android.widget.Toast;
 
@@ -18,16 +19,12 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
-
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
     private static final String TAG = "MainActivity";
-    private static final String KEY_CARTI = "carti";
 
-    // final: adaptorul ține referința la ACEST obiect listă → restaurezi cu addAll, nu cu =
     private final ArrayList<Carte> carti = new ArrayList<>();
     private ArrayAdapter<Carte> adapter;
     private ActivityResultLauncher<Intent> addLauncher;
@@ -43,17 +40,8 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
 
-        // restaurare după rotire — ÎNAINTE de adaptor
-        if (savedInstanceState != null) {
-            @SuppressWarnings("unchecked")
-            ArrayList<Carte> salvate = (ArrayList<Carte>) savedInstanceState.getSerializable(KEY_CARTI);
-            if (salvate != null) {
-                carti.addAll(salvate);
-            }
-        }
-
         ListView listView = findViewById(R.id.listView);
-        FloatingActionButton fab = findViewById(R.id.fab);
+        Button btnAdauga = findViewById(R.id.btnAdauga);
 
         // adaptor generic: afișează toString()
         adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, carti);
@@ -73,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
                 });
 
         // 2. LANSARE — aștept rezultat → launch()
-        fab.setOnClickListener(v ->
+        btnAdauga.setOnClickListener(v ->
                 addLauncher.launch(new Intent(this, AddCarteActivity.class)));
     }
 
@@ -97,11 +85,5 @@ public class MainActivity extends AppCompatActivity {
             return true;
         }
         return super.onOptionsItemSelected(item);
-    }
-
-    @Override
-    protected void onSaveInstanceState(@NonNull Bundle outState) {
-        super.onSaveInstanceState(outState);
-        outState.putSerializable(KEY_CARTI, carti);
     }
 }

@@ -6,7 +6,7 @@ Scurtăturile sunt pentru keymap-ul implicit de Windows. Pe Mac: `Ctrl` → `Cmd
 
 | Shortcut | Ce face | Unde îl folosești |
 |---|---|---|
-| `Ctrl+O` | Override metode | `onPause`, `onSaveInstanceState`, `onCreateOptionsMenu`, `onOptionsItemSelected` |
+| `Ctrl+O` | Override metode | `onPause`, `onStop`, `onDestroy`, `onCreateOptionsMenu`, `onOptionsItemSelected` |
 | `Ctrl+I` | Implement metode din interfață | adaptor RecyclerView, listener-e |
 | `Alt+Insert` | Generate: constructor, getter/setter, `toString()` | clasa model (Carte, Film, Student) |
 | `Alt+Enter` | Quick fix: import, creare resursă string, implement methods | orice e roșu sau galben |
@@ -76,9 +76,8 @@ Scurtăturile sunt pentru keymap-ul implicit de Windows. Pe Mac: `Ctrl` → `Cmd
 - Pentru texte: butonul mic din dreapta câmpului deschide „Pick a Resource”. Sau scrii textul direct în XML și pe el `Alt+Enter` → *Extract string resource*.
 - Spinner fără cod: un `string-array` în `strings.xml`, apoi `entries` = `@array/nume`.
 - Butoane egale pe un rând: LinearLayout orizontal (`layout_height="wrap_content"`), iar fiecare buton are `layout_width="0dp"` și `layout_weight="1"`.
-- FAB: Palette → Buttons → FloatingActionButton. `src` = `@android:drawable/ic_input_add`, `layout_gravity` = `bottom|end`, `layout_margin` = `16dp` (în FrameLayout).
 
 ## Emulator și Logcat
 
-- Rotire: `Ctrl+←` / `Ctrl+→`. **Auto-rotate** trebuie să fie pornit în quick settings-ul emulatorului.
+- Rotire (nu intră la test): `Ctrl+←` / `Ctrl+→`, cu Auto-rotate pornit.
 - Filtre în Logcat: `tag:MainActivity`, `level:error`, `package:mine`.

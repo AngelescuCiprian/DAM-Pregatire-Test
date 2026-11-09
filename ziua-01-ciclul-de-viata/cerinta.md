@@ -14,7 +14,7 @@
    - d) rotești ecranul
    - e) apeși Back
 
-## Partea 2: pierderea datelor la rotire
+## Partea 2 (bonus, NU intră la test): pierderea datelor la rotire
 
 1. Layout: un LinearLayout vertical (păstrează `android:id="@+id/main"`) cu:
    - `EditText` cu id `etText`
@@ -23,6 +23,12 @@
 2. Câmpul `private int counter = 0;`. La click pe buton, `counter++` și TextView-ul afișează „Apăsat de X ori” (text din `strings.xml`, cu `%1$d`).
 3. Apasă de 5 ori, scrie ceva în EditText și rotește. **Ce s-a păstrat? Ce nu? De ce?**
 4. Repară cu `onSaveInstanceState` + restaurarea în `onCreate`.
+
+## Partea 3: exemplificare (tip de test)
+
+Suprascrie `onPause` și `onDestroy` cu câte un **Toast**. Adaugă o a doua activitate, deschisă cu un buton, și arată:
+- Toast-ul din `onPause` al MainActivity, care apare la deschiderea celei de-a doua activități;
+- Toast-ul din `onDestroy` al celei de-a doua activități, care apare când apeși Back din ea.
 
 ## Verificare
 

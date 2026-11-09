@@ -28,7 +28,7 @@ MainActivity                              AddCarteActivity
 ─────────────                             ─────────────────
 1. onCreate: registerForActivityResult
    (spui DINAINTE ce faci cu răspunsul)
-2. click FAB → launcher.launch(intent) ──►  completare formular + validare
+2. click buton → launcher.launch(intent) ─►  completare formular + validare
                                             Intent data = new Intent();
                                             data.putExtra("carte", carte);
                                             setResult(RESULT_OK, data);
@@ -52,7 +52,7 @@ MainActivity                              AddCarteActivity
 
 1. Tema rămasă `NoActionBar`: meniul nu apare.
 2. Ai schimbat rădăcina layout-ului și ai pierdut `android:id="@+id/main"`: crash la pornire.
-3. Lista nu e `final` și o restaurezi cu `carti = salvate` după crearea adaptorului: lista apare goală. Folosește `addAll`.
+3. Lista se declară `private final ArrayList<Carte> carti = new ArrayList<>();`: adaptorul ține referința la acest obiect, deci nu-i atribui niciodată altă listă cu `=`.
 4. Lipsește `notifyDataSetChanged()`: cartea e în listă, dar nu apare pe ecran.
 5. `getSerializableExtra("x", Carte.class)` merge doar cu minSdk ≥ 33. Varianta cu cast `(Carte)` merge oricum.
 6. Textul din Toast se pune în `strings.xml` cu `%1$d`.

@@ -1,4 +1,4 @@
-# Ziua 1: Ciclul de viață, Log, Toast, rotire
+# Ziua 1: Ciclul de viață, Log, Toast
 
 *Seminarul 1*
 
@@ -26,9 +26,36 @@ onCreate → onStart → onResume   →   [pe ecran, interactivă]
 
 \* Pe Android 12+, Back pe activitatea **principală** nu o mai distruge (task-ul merge în fundal, ca la Home). Pe o activitate secundară, `onDestroy` se apelează normal.
 
+> ⚠️ Rotirea și `onSaveInstanceState` **nu intră la test** (confirmat de profesor). Partea despre rotire de mai jos e doar de referință.
+
 **Rotirea = obiect nou.** Activitatea e distrusă și creată din nou, deci **toate câmpurile clasei revin la valorile inițiale**. Android salvează singur doar starea view-urilor care au id (textul din EditText, CheckBox-ul bifat). TextView-ul setat din cod și variabilele tale se pierd.
 
 **Rezolvarea:** salvezi în `onSaveInstanceState` și restaurezi în `onCreate`, cu `if (savedInstanceState != null)`.
+
+
+## Exemplificarea unei stări (tip de cerință la test)
+
+*„Exemplificați momentul în care se apelează `onPause`.”* Suprascrii metoda cu `Ctrl+O`, pui Toast + Log și **declanșezi starea în fața profului**.
+
+```java
+@Override
+protected void onPause() {
+    super.onPause();
+    Toast.makeText(this, "onPause - activitatea nu mai e în prim-plan", Toast.LENGTH_SHORT).show();
+    Log.d(TAG, "onPause");
+}
+```
+
+| Metoda | Cum o declanșezi ca s-o arăți |
+|---|---|
+| `onCreate`, `onStart`, `onResume` | pornești aplicația sau deschizi activitatea |
+| `onPause` → `onStop` | deschizi **altă activitate** (de exemplu formularul de adăugare) sau apeși Home |
+| `onRestart` → `onStart` → `onResume` | revii (Back din activitatea a doua) |
+| `onDestroy` | `finish()` sau Back pe o **activitate secundară** (de exemplu Salvează în AddCarteActivity) |
+
+- Cel mai clar se vede **deschizând a doua activitate**: Toast-ul din `onPause` al primei activități rămâne pe ecran peste cea nouă.
+- **AlertDialog nu declanșează `onPause`**, pentru că dialogul face parte din aceeași activitate.
+- `onDestroy` arată-l pe activitatea **secundară**. Pe Android 12+, Back pe activitatea principală nu o distruge.
 
 ## Cod esențial
 

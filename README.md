@@ -19,11 +19,11 @@ Lecții, cerințe și rezolvări pe zile, plus cheatsheet-uri pentru test. Totul
 
 | # | Folder | Subiect | Status |
 |---|---|---|---|
-| 1 | [ziua-01-ciclul-de-viata](ziua-01-ciclul-de-viata/) | Ciclul de viață, Log, Toast, rotire + `onSaveInstanceState` | ✅ |
+| 1 | [ziua-01-ciclul-de-viata](ziua-01-ciclul-de-viata/) | Ciclul de viață, Log, Toast, exemplificarea stărilor | ✅ |
 | 2 | [ziua-02-componente-vizuale](ziua-02-componente-vizuale/) | EditText, CheckBox, Spinner, Button, validare, `strings.xml` / `colors.xml` | ✅ |
 | 3 | [ziua-03-activitati-launcher-meniu](ziua-03-activitati-launcher-meniu/) | Activitate nouă, Intent explicit, `launch()` vs `startActivity()`, meniu, ListView + ArrayAdapter | ✅ |
 | D1 | [drill-01-trimite-primeste](drill-01-trimite-primeste/) | Drill: trimitere și preluare de date între activități (3 runde cu cronometru) | 🔄 |
-| 4 | — | Click / long click, AlertDialog, ștergere, **update**, **sortare**, **filtrare**, intent implicit (dial, share, web) | ⏳ |
+| 4 | — | Populare, click → detalii, long click → AlertDialog (ștergere / editare), **sortare**, **filtrare**, intent implicit, exemplificarea stărilor | ⏳ |
 | 5 | — | Adapter personalizat (ListView `getView()` + RecyclerView), culori pe rând, ListView vs RecyclerView | ⏳ |
 | 6 | — | Simulare de test, de la zero, cu timp | ⏳ |
 
@@ -33,7 +33,7 @@ Lecții, cerințe și rezolvări pe zile, plus cheatsheet-uri pentru test. Totul
 
 | Cerință din lista profului | Unde |
 |---|---|
-| Ciclul activităților, loguri și toast-uri | Ziua 1 · [cheatsheet §1–2](cheatsheet/02-cod-sabloane.md) |
+| Ciclul activităților, loguri și toast-uri (exemplificare: Toast în `onPause` etc.) | Ziua 1 · [cheatsheet §1–2](cheatsheet/02-cod-sabloane.md) |
 | Componente vizuale: butoane, meniu, TextView, EditText, Spinner, CheckBox | Ziua 2 + Ziua 3 (meniu) · [§3–5](cheatsheet/02-cod-sabloane.md) |
 | Preluare date de la tastatură și afișare | Ziua 2 · [§3](cheatsheet/02-cod-sabloane.md) |
 | Liste de obiecte: afișare, populare, sortare, filtrare, adăugare, ștergere, update | Ziua 3 (afișare, adăugare) · Ziua 4 (restul) · [§8–11](cheatsheet/02-cod-sabloane.md) |
@@ -45,13 +45,19 @@ Lecții, cerințe și rezolvări pe zile, plus cheatsheet-uri pentru test. Totul
 | Adapter generic și personalizat (doar view) | Ziua 3 (generic), Ziua 5 (personalizat) · [§13–14](cheatsheet/02-cod-sabloane.md) |
 | Crearea unei activități | Ziua 3 · [shortcuts](cheatsheet/01-android-studio-shortcuts.md) |
 
-Fragmentele (Seminarul 3) **nu intră** la test.
 
 ---
 
+## Ce NU intră la test (confirmat de profesor)
+
+- Rotirea și `onSaveInstanceState`. Rămân în repo doar ca referință, marcate *bonus*.
+- FloatingActionButton. Folosim un `Button` obișnuit.
+- Fragmentele (Seminarul 3).
+- Componente vizuale în afara listei: doar butoane, meniu, TextView, EditText, Spinner, CheckBox.
+
 ## Reguli fixe pentru test
 
-- **`findViewById`**, nu binding.
+- **`findViewById`**, nu binding (profesorul lasă la alegere).
 - Activitate nouă: **New → Activity → Empty Views Activity** (nu „Empty Activity”, aia e Compose). Se adaugă singură în Manifest.
 - Formulare: **LinearLayout vertical**, nu ConstraintLayout.
 - Ai meniu → tema **fără `NoActionBar`**.

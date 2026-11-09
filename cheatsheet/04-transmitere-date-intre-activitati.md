@@ -93,7 +93,7 @@ addLauncher = registerForActivityResult(
         });
 ```
 
-**④ Lansarea** (la click pe FAB sau pe un buton)
+**④ Lansarea** (la click pe buton)
 ```java
 addLauncher.launch(new Intent(this, AddCarteActivity.class));
 ```

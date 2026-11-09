@@ -24,16 +24,15 @@
    La salvare: trimiți cartea înapoi cu `setResult(RESULT_OK, data)` + `finish()`.
 
 4. **`MainActivity`:**
-   - layout: un FrameLayout cu un `ListView` (`listView`) și un `FloatingActionButton` (`fab`, colț dreapta-jos);
+   - layout: un LinearLayout vertical cu un `Button` (`btnAdauga`, „Adaugă carte”) și, sub el, un `ListView` (`listView`);
    - lista de cărți afișată prin `ArrayAdapter` cu `simple_list_item_1`;
-   - FAB → deschide `AddCarteActivity` cu **`launcher.launch()`**;
+   - `btnAdauga` → deschide `AddCarteActivity` cu **`launcher.launch()`**;
    - cartea primită se adaugă în listă și apare pe ecran, iar în Logcat apare un `Log.d` cu ea.
 
 5. **Meniu** (`res/menu/menu.xml`):
    - „Număr cărți” → Toast „Sunt X cărți în listă” (text din `strings.xml` cu `%1$d`);
    - „Despre” → deschide `AboutActivity` cu **`startActivity()`**. Aceasta are un TextView „CartiApp v1.0” și un buton „Înapoi” care apelează `finish()`.
 
-6. **Rotire:** după rotire, lista de cărți se păstrează.
 
 ## Verificare
 
@@ -42,4 +41,3 @@
 - [ ] Back din formular fără salvare → nu crapă și nu adaugă nimic.
 - [ ] Meniu → „Număr cărți” = 3.
 - [ ] Meniu → „Despre” → „Înapoi” → revii la lista intactă.
-- [ ] Rotești de 2 ori: tot 3 cărți, fără dubluri.

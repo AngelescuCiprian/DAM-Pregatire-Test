@@ -1,7 +1,7 @@
 <!-- res/values/strings.xml -->
 <resources>
     <string name="app_name">CartiApp</string>
-    <string name="fab_desc">Adaugă carte</string>
+    <string name="btn_adauga">Adaugă carte</string>
 
     <string name="hint_titlu">Titlu</string>
     <string name="label_gen">Gen</string>

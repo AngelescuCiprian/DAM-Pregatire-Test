@@ -17,7 +17,7 @@ Toate exemplele folosesc o clasă `Carte` (`titlu`, `gen`, `an`) și `findViewBy
 12. [Intent implicit](#12-intent-implicit)
 13. [Adapter personalizat pentru ListView (getView)](#13-adapter-personalizat-pentru-listview-getview)
 14. [RecyclerView + adapter personalizat](#14-recyclerview--adapter-personalizat)
-15. [Rotire: salvarea datelor](#15-rotire-salvarea-datelor)
+15. [Rotire: salvarea datelor (NU intră la test)](#15-rotire-salvarea-datelor-nu-intră-la-test)
 16. [Resurse: strings, colors](#16-resurse-strings-colors)
 17. [Comparații de teorie](#17-comparații-de-teorie)
 
@@ -42,6 +42,30 @@ protected void onPause() {          // Ctrl+O → onPause
     Log.d(TAG, "onPause");
 }
 ```
+
+### Exemplificarea unei stări (tip de cerință la test)
+
+*„Exemplificați momentul în care se apelează `onPause`.”* Suprascrii metoda cu `Ctrl+O`, pui Toast + Log și **declanșezi starea în fața profului**.
+
+```java
+@Override
+protected void onPause() {
+    super.onPause();
+    Toast.makeText(this, "onPause - activitatea nu mai e în prim-plan", Toast.LENGTH_SHORT).show();
+    Log.d(TAG, "onPause");
+}
+```
+
+| Metoda | Cum o declanșezi ca s-o arăți |
+|---|---|
+| `onCreate`, `onStart`, `onResume` | pornești aplicația sau deschizi activitatea |
+| `onPause` → `onStop` | deschizi **altă activitate** (de exemplu formularul de adăugare) sau apeși Home |
+| `onRestart` → `onStart` → `onResume` | revii (Back din activitatea a doua) |
+| `onDestroy` | `finish()` sau Back pe o **activitate secundară** (de exemplu Salvează în AddCarteActivity) |
+
+- Cel mai clar se vede **deschizând a doua activitate**: Toast-ul din `onPause` al primei activități rămâne pe ecran peste cea nouă.
+- **AlertDialog nu declanșează `onPause`**, pentru că dialogul face parte din aceeași activitate.
+- `onDestroy` arată-l pe activitatea **secundară**. Pe Android 12+, Back pe activitatea principală nu o distruge.
 
 ## 2. Log și Toast
 
@@ -214,10 +238,9 @@ adapter.notifyDataSetChanged();     // după ORICE modificare a listei
 
 Populare cu date de test:
 ```java
-if (savedInstanceState == null) {          // altfel se dublează la rotire!
-    carti.add(new Carte("Dune", "SF", 2021));
-    carti.add(new Carte("Ion", "Roman", 1995));
-}
+carti.add(new Carte("Dune", "SF", 2021));
+carti.add(new Carte("Ion", "Roman", 1995));
+adapter.notifyDataSetChanged();     // dacă populezi după setAdapter
 ```
 
 ## 9. Click, long click, AlertDialog, ștergere
@@ -453,7 +476,9 @@ carti.set(pos, c);    adapter.notifyItemChanged(pos);
 // sortare / filtrare  → adapter.notifyDataSetChanged();
 ```
 
-## 15. Rotire: salvarea datelor
+## 15. Rotire: salvarea datelor (NU intră la test)
+
+> Profesorul a confirmat că rotirea și `onSaveInstanceState` nu intră la test. Secțiunea e doar de referință.
 
 ```java
 @Override
