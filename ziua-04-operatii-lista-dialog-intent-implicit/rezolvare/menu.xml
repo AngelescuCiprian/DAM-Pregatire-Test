@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- res/menu/menu.xml -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/nav_sort_titlu" android:title="@string/nav_sort_titlu" />
+    <item android:id="@+id/nav_sort_an" android:title="@string/nav_sort_an" />
+    <item android:id="@+id/nav_filtru_sf" android:title="@string/nav_filtru_sf" />
+    <item android:id="@+id/nav_toate" android:title="@string/nav_toate" />
+</menu>

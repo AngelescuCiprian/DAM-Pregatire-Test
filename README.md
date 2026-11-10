@@ -22,8 +22,9 @@ Lecții, cerințe și rezolvări pe zile, plus cheatsheet-uri pentru test. Totul
 | 1 | [ziua-01-ciclul-de-viata](ziua-01-ciclul-de-viata/) | Ciclul de viață, Log, Toast, exemplificarea stărilor | ✅ |
 | 2 | [ziua-02-componente-vizuale](ziua-02-componente-vizuale/) | EditText, CheckBox, Spinner, Button, validare, `strings.xml` / `colors.xml` | ✅ |
 | 3 | [ziua-03-activitati-launcher-meniu](ziua-03-activitati-launcher-meniu/) | Activitate nouă, Intent explicit, `launch()` vs `startActivity()`, meniu, ListView + ArrayAdapter | ✅ |
-| D1 | [drill-01-trimite-primeste](drill-01-trimite-primeste/) | Drill: trimitere și preluare de date între activități (3 runde cu cronometru) | 🔄 |
-| 4 | — | Populare, click → detalii, long click → AlertDialog (ștergere / editare), **sortare**, **filtrare**, intent implicit, exemplificarea stărilor | ⏳ |
+| D1 | [drill-01-trimite-primeste](drill-01-trimite-primeste/) | Drill: trimitere și preluare de date între activități (3 runde cu cronometru) | ✅ |
+| D2 | [drill-02-trimite-primeste-meniu](drill-02-trimite-primeste-meniu/) | Drill: trimitere date + meniu (număr, total) | ✅ |
+| 4 | [ziua-04-operatii-lista-dialog-intent-implicit](ziua-04-operatii-lista-dialog-intent-implicit/) | Populare, click → detalii, long click → AlertDialog (ștergere / editare), sortare, filtrare, intent implicit | ✅ |
 | 5 | — | Adapter personalizat (ListView `getView()` + RecyclerView), culori pe rând, ListView vs RecyclerView | ⏳ |
 | 6 | — | Simulare de test, de la zero, cu timp | ⏳ |
 

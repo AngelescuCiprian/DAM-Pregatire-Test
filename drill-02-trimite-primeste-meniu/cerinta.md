@@ -23,3 +23,12 @@
 - [ ] Back din formular fără salvare → nu crapă.
 - [ ] Click pe un produs → detaliile sunt corecte.
 - [ ] „Total” dă suma corectă, cu zecimale.
+
+## Greșelile tipice (din prima mea rundă)
+1. `findViewById` **înainte** de `setContentView` → `null` → crash. Codul tău vine **după** blocul generat.
+2. `new ArrayAdapter<>(this, layout)` **fără listă** → nimic pe ecran.
+3. Cheia `"carte"` copiată din alt proiect, deși trimiterea folosea `"produs"` → `null`.
+4. Lipsește `notifyDataSetChanged()`.
+5. `launcher.launch(...)` direct în `onCreate` → formularul se deschide singur la pornire. `launch` se pune **în click**.
+
+**Ordinea din `onCreate`:** bloc generat → `findViewById` → adaptor (cu lista!) → `register` → click-uri.

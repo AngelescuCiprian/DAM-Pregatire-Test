@@ -1,0 +1,33 @@
+<!-- res/values/strings.xml -->
+<resources>
+    <string name="app_name">BibliotecaApp</string>
+
+    <string name="btn_adauga">Adaugă carte</string>
+    <string name="hint_titlu">Titlu</string>
+    <string name="hint_an">Anul apariției (1990–2026)</string>
+    <string name="btn_salveaza">Salvează</string>
+    <string name="err_empty">Completează titlul și anul!</string>
+    <string name="err_an">Anul trebuie să fie între 1990 și 2026!</string>
+
+    <string name="btn_cauta">Caută pe Google</string>
+    <string name="btn_distribuie">Distribuie</string>
+    <string name="share_title">Distribuie cartea prin</string>
+
+    <string name="dlg_mesaj">Ce vrei să faci cu această carte?</string>
+    <string name="dlg_sterge">Șterge</string>
+    <string name="dlg_editeaza">Editează</string>
+    <string name="dlg_anuleaza">Anulează</string>
+    <string name="msg_stearsa">Carte ștearsă</string>
+
+    <string name="nav_sort_titlu">Sortează după titlu</string>
+    <string name="nav_sort_an">Sortează după an</string>
+    <string name="nav_filtru_sf">Doar SF</string>
+    <string name="nav_toate">Toate cărțile</string>
+
+    <string-array name="genuri">
+        <item>Roman</item>
+        <item>SF</item>
+        <item>Poezie</item>
+        <item>Istorie</item>
+    </string-array>
+</resources>

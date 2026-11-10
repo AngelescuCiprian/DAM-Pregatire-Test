@@ -1,0 +1,42 @@
+<!-- ===== res/layout/activity_main.xml ===== -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+    <Button android:id="@+id/btnAdauga" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:text="Adaugă produs" />
+    <ListView android:id="@+id/listView" android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>
+
+<!-- ===== res/layout/activity_add_produs.xml ===== -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:fitsSystemWindows="true" android:orientation="vertical" android:padding="16dp">
+    <EditText android:id="@+id/etNume" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:hint="Nume" />
+    <EditText android:id="@+id/etPret" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:hint="Preț" android:inputType="numberDecimal" />
+    <Button android:id="@+id/btnSalveaza" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:text="Salvează" />
+</LinearLayout>
+
+<!-- ===== res/layout/activity_detalii_produs.xml ===== -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:fitsSystemWindows="true" android:orientation="vertical" android:padding="16dp">
+    <TextView android:id="@+id/tvNume" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:textSize="22sp" android:textStyle="bold" />
+    <TextView android:id="@+id/tvPret" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:textSize="18sp" />
+</LinearLayout>
+
+<!-- ===== res/menu/menu.xml ===== -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/nav_numar" android:title="Număr produse" />
+    <item android:id="@+id/nav_total" android:title="Total" />
+</menu>
+
+<!-- Tema fără NoActionBar, altfel meniul nu apare. Texte hardcodate doar pentru viteză (drill). -->
