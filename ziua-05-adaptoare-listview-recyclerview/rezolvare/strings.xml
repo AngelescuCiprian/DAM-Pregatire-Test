@@ -1,0 +1,11 @@
+<!-- res/values/strings.xml -->
+<resources>
+    <string name="app_name">FilmeApp</string>
+    <string name="btn_recycler">Vezi în RecyclerView</string>
+    <string name="dlg_titlu">Ștergi filmul?</string>
+    <string name="dlg_da">Da</string>
+    <string name="dlg_nu">Nu</string>
+</resources>
+<!-- Dacă RecyclerView e roșu în XML: build.gradle.kts (:app) →
+     implementation("androidx.recyclerview:recyclerview:1.3.2") → Sync Now
+     (de obicei vine deja prin dependența material din șablonul proiectului) -->

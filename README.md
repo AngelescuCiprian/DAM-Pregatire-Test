@@ -25,7 +25,7 @@ Lecții, cerințe și rezolvări pe zile, plus cheatsheet-uri pentru test. Totul
 | D1 | [drill-01-trimite-primeste](drill-01-trimite-primeste/) | Drill: trimitere și preluare de date între activități (3 runde cu cronometru) | ✅ |
 | D2 | [drill-02-trimite-primeste-meniu](drill-02-trimite-primeste-meniu/) | Drill: trimitere date + meniu (număr, total) | ✅ |
 | 4 | [ziua-04-operatii-lista-dialog-intent-implicit](ziua-04-operatii-lista-dialog-intent-implicit/) | Populare, click → detalii, long click → AlertDialog (ștergere / editare), sortare, filtrare, intent implicit | ✅ |
-| 5 | — | Adapter personalizat (ListView `getView()` + RecyclerView), culori pe rând, ListView vs RecyclerView | ⏳ |
+| 5 | [ziua-05-adaptoare-listview-recyclerview](ziua-05-adaptoare-listview-recyclerview/) | Adaptor generic vs personalizat (ListView `getView()` + RecyclerView), ListView vs RecyclerView | 🔄 |
 | 6 | — | Simulare de test, de la zero, cu timp | ⏳ |
 
 ---
@@ -42,8 +42,8 @@ Lecții, cerințe și rezolvări pe zile, plus cheatsheet-uri pentru test. Totul
 | Logcat și debugger | [cheatsheet/03-capcane-si-erori.md](cheatsheet/03-capcane-si-erori.md) · [shortcuts](cheatsheet/01-android-studio-shortcuts.md) |
 | Intent implicit, explicit, `launcher.launch()` vs `startActivity()` | Ziua 3 + Drill 1 · [§6–7, §12](cheatsheet/02-cod-sabloane.md) · [foaia de transmitere date](cheatsheet/04-transmitere-date-intre-activitati.md) |
 | AlertDialog, click / long click | Ziua 4 · [§9](cheatsheet/02-cod-sabloane.md) |
-| ListView, RecyclerView | Ziua 3, Ziua 5 · [§8, §14](cheatsheet/02-cod-sabloane.md) |
-| Adapter generic și personalizat (doar view) | Ziua 3 (generic), Ziua 5 (personalizat) · [§13–14](cheatsheet/02-cod-sabloane.md) |
+| ListView, RecyclerView | Ziua 3, **Ziua 5** · [§8, §14](cheatsheet/02-cod-sabloane.md) |
+| Adapter generic și personalizat (doar view) | Ziua 3 (generic), **Ziua 5** (personalizat) · [§13–14](cheatsheet/02-cod-sabloane.md) |
 | Crearea unei activități | Ziua 3 · [shortcuts](cheatsheet/01-android-studio-shortcuts.md) |
 
 
