@@ -26,7 +26,7 @@ Lecții, cerințe și rezolvări pe zile, plus cheatsheet-uri pentru test. Totul
 | D2 | [drill-02-trimite-primeste-meniu](drill-02-trimite-primeste-meniu/) | Drill: trimitere date + meniu (număr, total) | ✅ |
 | 4 | [ziua-04-operatii-lista-dialog-intent-implicit](ziua-04-operatii-lista-dialog-intent-implicit/) | Populare, click → detalii, long click → AlertDialog (ștergere / editare), sortare, filtrare, intent implicit | ✅ |
 | 5 | [ziua-05-adaptoare-listview-recyclerview](ziua-05-adaptoare-listview-recyclerview/) | Adaptor generic vs personalizat (ListView `getView()` + RecyclerView), ListView vs RecyclerView | 🔄 |
-| 6 | — | Simulare de test, de la zero, cu timp | ⏳ |
+| 6 | [simulare-01-laptopuri](simulare-01-laptopuri/) | Simulare de test, de la zero, 90 min | 🔄 |
 
 ---
 
