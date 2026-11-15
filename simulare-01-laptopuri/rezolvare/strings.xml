@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">SimulareTestDAM_1</string>
+    <string name="model">Model</string>
+    <string name="pret">Pret</string>
+    <string name="garantie_extinsa">Garantie Extinsa</string>
+    <string name="salveaza">Salveaza</string>
+    <string name="adauga_laptop">Adauga laptop</string>
+    <string name="cauta_pe_google">Cauta pe google</string>
+    <string name="nrLaptopuri">Numar laptopuri: %1$d</string>
+    <string name="pret_format">%1$.2f lei</string>
+    <string name="garantie_da">Cu garanție extinsă</string>
+    <string name="garantie_nu">Fără garanție extinsă</string>
+
+    <string-array name="tip">
+        <item>Gaming</item>
+        <item>Office</item>
+        <item>Ultrabook</item>
+    </string-array>
+</resources>

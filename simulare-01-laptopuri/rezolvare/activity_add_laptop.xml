@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- FIX: numberDecimal la preț, ca să poți scrie 4999.99 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AddLaptopActivity">
+
+    <EditText
+        android:id="@+id/etModel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/model"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/etPret"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/pret"
+        android:inputType="numberDecimal" />
+
+    <Spinner
+        android:id="@+id/spTip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/tip" />
+
+    <CheckBox
+        android:id="@+id/cbGarantie"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/garantie_extinsa" />
+
+    <Button
+        android:id="@+id/btnSalveaza"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/salveaza" />
+</LinearLayout>

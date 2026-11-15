@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- FIX: TextView-uri pentru afișare -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView android:id="@+id/tvModel" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:textSize="22sp" android:textStyle="bold" />
+    <TextView android:id="@+id/tvPret" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:textSize="16sp" />
+    <TextView android:id="@+id/tvTip" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:textSize="16sp" />
+    <TextView android:id="@+id/tvGarantie" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:textSize="16sp" />
+
+    <Button android:id="@+id/btnSearch" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:layout_marginTop="16dp"
+        android:text="@string/cauta_pe_google" />
+</LinearLayout>

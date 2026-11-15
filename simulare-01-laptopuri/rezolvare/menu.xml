@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/itmSortPret"
+        android:title="Sorteaza pret" />
+    <item
+        android:id="@+id/itmGaming"
+        android:title="Filtrare Gaming" />
+    <item
+        android:id="@+id/itmToate"
+        android:title="Toate" />
+    <item
+        android:id="@+id/itmNrLaptopuri"
+        android:title="Nr Laptopuri" />
+</menu>
