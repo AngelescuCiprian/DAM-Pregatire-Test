@@ -46,7 +46,6 @@ Strict pe lista profesorului. Totul se transmite cu `putExtra` / `getSerializabl
    - „Total persoane”: Toast cu suma persoanelor din listă.
 
 **Recomandat:** textele în `strings.xml`.
-**Bonus (+1p):** adaptor personalizat în locul celui generic.
 
 ---
 
