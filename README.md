@@ -27,6 +27,7 @@ Lecții, cerințe și rezolvări pe zile, plus cheatsheet-uri pentru test. Totul
 | 4 | [ziua-04-operatii-lista-dialog-intent-implicit](ziua-04-operatii-lista-dialog-intent-implicit/) | Populare, click → detalii, long click → AlertDialog (ștergere / editare), sortare, filtrare, intent implicit | ✅ |
 | 5 | [ziua-05-adaptoare-listview-recyclerview](ziua-05-adaptoare-listview-recyclerview/) | Adaptor generic vs personalizat (ListView `getView()` + RecyclerView), ListView vs RecyclerView | 🔄 |
 | 6 | [simulare-01-laptopuri](simulare-01-laptopuri/) | Simulare de test, de la zero, 90 min (9.5/10) | ✅ |
+| 7 | [simulare-02-rezervari](simulare-02-rezervari/) | Simulare de recapitulare, 75 min | 🔄 |
 
 ---
 
