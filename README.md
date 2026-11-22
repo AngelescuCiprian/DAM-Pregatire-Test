@@ -37,7 +37,7 @@ Lecții, cerințe și rezolvări pe zile, plus cheatsheet-uri pentru test. Totul
 
 | Seminar | Folder | Subiect | Status |
 |---|---|---|---|
-| 7 | [seminar-07-json-retea](seminar-07-json-retea/) | Date din rețea (HTTPS) + parsare JSON, Thread + Handler | 🔄 |
+| 7 | [seminar-07-json-retea](seminar-07-json-retea/) | Date din rețea (HTTPS) + parsare JSON, Thread + Handler | ✅ partea 1 · ⏳ partea 2 |
 
 ---
 
