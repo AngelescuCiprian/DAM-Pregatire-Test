@@ -39,9 +39,9 @@ new Thread(() -> {
 ```
 Variantă echivalentă, mai scurtă: `runOnUiThread(() -> afiseaza(json));`
 
-## 3. Descărcarea: `HttpsManager`
+## 3. Descărcarea: `HttpsManager` (NU se învață, o primești gata făcută, inclusiv la test)
 
-Partea de memorat:
+Doar ca să știi ce face, nu de memorat:
 ```java
 HttpsURLConnection conn = (HttpsURLConnection) new URL(adresaUrl).openConnection();
 BufferedReader reader = new BufferedReader(new InputStreamReader(conn.getInputStream()));
@@ -59,7 +59,7 @@ return sb.toString();
 - `StringBuilder` lipește liniile într-un singur String.
 - În `finally` închizi conexiunea (`close` / `disconnect`).
 
-`trustEveryone()` din seminar **dezactivează verificarea certificatelor SSL**. E doar ca să meargă în laborator, nu îl memora și nu-l folosi într-o aplicație reală. Pentru site-uri cu certificat valid (npoint.io, jsonkeeper.com) merge și fără el.
+**Ce trebuie să știi:** `new HttpsManager(url).procesare()` îți dă **JSON-ul ca String** și trebuie apelat **pe un fir secundar**. Atât.
 
 ## 4. JSON: sintaxa
 

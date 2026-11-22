@@ -15,7 +15,7 @@ Copiază **linkul raw / API**: deschis în browser, trebuie să arate **doar JSO
 ## Partea 1: descărcare + afișare (25 min)
 1. Permisiunea `INTERNET` în Manifest.
 2. Clasa `Carte` (`titlu`, `autor`, `an`, `pret`, `disponibila`) cu `toString()`.
-3. `HttpsManager`: **scrie din memorie** partea de citire (URL → conexiune → BufferedReader → StringBuilder). Fără `trustEveryone`.
+3. `HttpsManager`: **copiază-l din seminar** (îl primești gata făcut și la test).
 4. `CarteParser.parsareJson(String json)` → `List<Carte>`.
 5. `MainActivity`: ListView cu adaptor generic, iar în `onCreate`:
    - `new Thread` → descarci;
