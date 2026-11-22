@@ -1,4 +1,6 @@
-# DAM – Pregătire Test 1
+# DAM – Pregătire
+
+**Test 1: 10/10 ✅**
 
 **Dispozitive și Aplicații Mobile** · ASE CSIE · Java + Android Studio
 
@@ -28,6 +30,14 @@ Lecții, cerințe și rezolvări pe zile, plus cheatsheet-uri pentru test. Totul
 | 5 | [ziua-05-adaptoare-listview-recyclerview](ziua-05-adaptoare-listview-recyclerview/) | Adaptor generic vs personalizat (ListView `getView()` + RecyclerView), ListView vs RecyclerView | 🔄 |
 | 6 | [simulare-01-laptopuri](simulare-01-laptopuri/) | Simulare de test, de la zero, 90 min (9.5/10) | ✅ |
 | 7 | [simulare-02-rezervari](simulare-02-rezervari/) | Simulare de recapitulare, 75 min | 🔄 |
+
+---
+
+## După Test 1: seminariile noi
+
+| Seminar | Folder | Subiect | Status |
+|---|---|---|---|
+| 7 | [seminar-07-json-retea](seminar-07-json-retea/) | Date din rețea (HTTPS) + parsare JSON, Thread + Handler | 🔄 |
 
 ---
 
